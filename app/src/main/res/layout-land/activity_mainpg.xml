@@ -1,0 +1,227 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.kulwinder.sunspark.mainpg">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <RelativeLayout
+        android:layout_width="614dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/mainb">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="44dp"
+            android:checked="false"
+            android:textSize="35sp"
+            android:layout_toStartOf="@+id/textView5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/headlight"
+            android:enabled="true" />
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:text="HORN"
+            android:id="@+id/button5"
+            android:textSize="35sp"
+            android:background="@drawable/round"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:typeface="monospace"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/textView5"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:background="@drawable/speed"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Head Lights"
+            android:id="@+id/textView6"
+
+            android:textSize="20sp"
+            android:textColor="#fae100"
+            android:layout_alignTop="@+id/button5"
+            android:layout_alignStart="@+id/toggleButton"
+            android:layout_alignEnd="@+id/toggleButton"
+            android:gravity="center" />
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignEnd="@+id/toggleButton"
+            android:layout_below="@+id/toggleButton"
+            android:layout_alignStart="@+id/toggleButton"
+            android:checkedButton="@+id/radioButton"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto Mode"
+                android:id="@+id/radioButton2"
+                android:checked="false"
+                android:layout_alignTop="@+id/radioButton"
+                android:layout_alignEnd="@+id/radioGroup" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manual Mode"
+                android:id="@+id/radioButton"
+                android:checked="false"
+                android:layout_centerVertical="true"
+                android:layout_alignStart="@+id/radioGroup" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Speed"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:textColor="#f80303"
+            android:typeface="serif"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Front"
+            android:id="@+id/textView9"
+            android:layout_below="@+id/textView8"
+            android:layout_alignEnd="@+id/button5"
+            android:layout_alignStart="@+id/button5"
+            android:background="@drawable/collision"
+            android:gravity="center"
+            android:textColor="#0400ff" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Battery Volatge"
+            android:id="@+id/textView12"
+            android:layout_alignStart="@+id/radioGroup"
+            android:textColor="#f7f702"
+            android:layout_toStartOf="@+id/textView13"
+            android:gravity="center"
+            android:layout_below="@+id/textView9"
+            android:layout_above="@+id/textView14" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Battery Temp."
+            android:id="@+id/textView13"
+            android:textColor="#f7f702"
+            android:layout_alignTop="@+id/textView11"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_alignEnd="@+id/radioGroup"
+            android:gravity="center"
+            android:layout_above="@+id/textView15" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:id="@+id/textView14"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView12"
+            android:gravity="center"
+            android:textColor="#f7f304"
+            android:background="@drawable/speed"
+            android:textSize="21sp"
+            android:layout_alignTop="@+id/textView15" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:id="@+id/textView15"
+            android:gravity="center"
+            android:textColor="#f7f304"
+            android:background="@drawable/speed"
+            android:textSize="21sp"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/textView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Seatbelt"
+            android:id="@+id/textView7"
+            android:textColor="#02046e"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="@drawable/headlight"
+            android:layout_alignBaseline="@+id/textView15"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_alignEnd="@+id/textView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="COLLISION WARNING"
+            android:id="@+id/textView11"
+            android:gravity="center"
+            android:textColor="#bd2b2b"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_below="@+id/textView9"
+            android:layout_alignBottom="@+id/textView7" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/toggleButton"
+            android:layout_toStartOf="@+id/textView5"
+            android:layout_marginEnd="50dp"
+            android:id="@+id/textView10" />
+
+    </RelativeLayout>
+</FrameLayout>

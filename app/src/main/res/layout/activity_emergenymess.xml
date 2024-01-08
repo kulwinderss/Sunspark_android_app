@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_emergenymess"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kulwinder.sunspark.emergenymess"
+    tools:background="@drawable/ll2">
+
+    <TextView
+        android:text="Inform your relatives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:textSize="30sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <TextView
+        android:text="Mobile number to whom EMERGENCY message will be send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:textSize="21sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textColor="?android:attr/textColorPrimaryDisableOnly" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_alignBaseline="@+id/textView23"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_alignStart="@+id/editText2"
+        android:textColor="?android:attr/colorMultiSelectHighlight"
+        android:enabled="false" />
+
+    <TextView
+        android:text="First"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView21"
+        android:textSize="22sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_below="@+id/textView20"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_above="@+id/textView23"
+        android:layout_alignParentEnd="true"
+        android:textColor="?android:attr/colorFocusedHighlight"
+        android:enabled="false" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:id="@+id/toggleButton2"
+        android:layout_below="@+id/editText3"
+        android:layout_toEndOf="@+id/textView23"
+        android:textSize="30sp"
+        android:layout_width="200dp"
+        android:textOff="CHANGE"
+        android:textOn="OK"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView23"
+        android:textSize="22sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
